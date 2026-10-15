@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Franklin Mubiru Luutu, Electrical Engineering student at Kyambogo University focused on automation, electronics, embedded systems and electrical systems.">
+  <title>Franklin Mubiru Luutu | Electrical Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar" id="top">
+    <a href="#top" class="logo">F<span>.</span>M<span>.</span>L</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    <nav id="nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#industry">Industry</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">&#9790;</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner reveal">
+        <p class="eyebrow">Electrical Engineering Student</p>
+        <h1>FRANKLIN MUBIRU LUUTU</h1>
+        <p class="tagline">Automation &bull; Electronics &bull; Embedded Systems &bull; Electrical Systems</p>
+        <p class="hero-text">I turn electrical engineering theory into working systems, combining circuits, control, programming and AI to solve real problems for Uganda and Africa.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#projects">View My Work</a>
+          <a class="btn btn-outline" href="cv.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="reveal">About Me</h2>
+      <div class="about-grid reveal">
+        <div>
+          <p>I am an Electrical Engineering student at <strong>Kyambogo University, Uganda</strong>, currently in my third year. I am interested in electrical systems, industrial automation, electronics, embedded systems, control systems, renewable energy, and applying software and artificial intelligence to engineering problems.</p>
+          <p>Through classroom projects, laboratory work, programming exercises and technical research, I have learned how engineering concepts become practical systems that solve real-world problems.</p>
+          <p>My long-term goal is to design, implement, maintain and improve modern electrical and automated systems.</p>
+        </div>
+        <aside class="highlight-card">
+          <h3>Strongest interests</h3>
+          <ul class="checklist">
+            <li>Industrial Automation and PLCs</li>
+            <li>Electrical Power Systems</li>
+            <li>Embedded Systems and IoT</li>
+            <li>Motor Control and Protection</li>
+            <li>AI-based Fault Detection</li>
+            <li>Renewable Energy</li>
+          </ul>
+        </aside>
+      </div>
+      <blockquote class="statement reveal">
+        "I am developing from a student who understands electrical engineering theory into an engineer who can design, build, program, test, and improve real-world electrical systems."
+      </blockquote>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section alt">
+      <h2 class="reveal">Education</h2>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <span class="date">Currently in Year 3</span>
+          <h3>Bachelor's Degree in Electrical Engineering</h3>
+          <p>Kyambogo University, Faculty of Engineering, Uganda</p>
+          <p class="muted">Coursework: power systems, control systems, electrical machines, transformers, analog and digital electronics, protection, programming.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="reveal">Projects and Practical Work</h2>
+
+      <div class="filters reveal" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="embedded">Embedded / IoT</button>
+        <button class="filter" data-filter="automation">Automation</button>
+        <button class="filter" data-filter="software">Programming</button>
+        <button class="filter" data-filter="power">Power / Electronics</button>
+      </div>
+
+      <div class="grid" id="projectGrid">
+
+        <article class="card reveal" data-cat="embedded">
+          <div class="card-img">Add photo of project</div>
+          <h3>Smart Room Monitoring System</h3>
+          <p><strong>Problem:</strong> Monitor room conditions and occupancy remotely.</p>
+          <p><strong>Approach:</strong> Arduino with DHT11, ultrasonic and PIR sensors, buzzer alarm, and ESP8266 Wi-Fi module sending data to ThingSpeak.</p>
+          <p><strong>Result:</strong> Live sensor readings for temperature, humidity, distance and motion, displayed as graphs.</p>
+          <div class="tags"><span>Arduino</span><span>ESP8266</span><span>IoT</span><span>Sensors</span></div>
+          <a href="#" class="link">View code / report &rarr;</a>
+        </article>
+
+        <article class="card reveal" data-cat="software">
+          <div class="card-img">Add plot screenshot</div>
+          <h3>Engineering Simulations in Python</h3>
+          <p><strong>Problem:</strong> Understand circuit and system behaviour beyond hand calculation.</p>
+          <p><strong>Approach:</strong> Python (NumPy, Matplotlib) in PyCharm to simulate RC charging and discharging, control-system step response, RMS and transformer design calculations.</p>
+          <p><strong>Result:</strong> Clear voltage, current and time-response graphs for analysis.</p>
+          <div class="tags"><span>Python</span><span>PyCharm</span><span>Modelling</span></div>
+          <a href="#" class="link">View code &rarr;</a>
+        </article>
+
+        <article class="card reveal" data-cat="automation">
+          <div class="card-img">Add circuit diagram</div>
+          <h3>Automatic Water Pump Control</h3>
+          <p><strong>Problem:</strong> Remove the need for manual pump switching.</p>
+          <p><strong>Approach:</strong> Study of level sensing with relay and contactor control to switch a pump motor automatically.</p>
+          <p><strong>Result:</strong> Understanding of sensor-based control and motor switching circuits.</p>
+          <div class="tags"><span>Relays</span><span>Contactors</span><span>Motor control</span></div>
+          <a href="#" class="link">View diagram &rarr;</a>
+        </article>
+
+        <article class="card reveal" data-cat="automation">
+          <div class="card-img">Add circuit diagram</div>
+          <h3>Photocell Automatic Lighting</h3>
+          <p><strong>Problem:</strong> Switch lighting automatically based on daylight.</p>
+          <p><strong>Approach:</strong> Photocell and contactor control circuit with auxiliary contacts.</p>
+          <p><strong>Result:</strong> Understanding of automatic switching and basic electrical protection.</p>
+          <div class="tags"><span>Photocell</span><span>Contactor</span><span>Control circuits</span></div>
+          <a href="#" class="link">View diagram &rarr;</a>
+        </article>
+
+        <article class="card reveal" data-cat="automation embedded">
+          <div class="card-img">Add photo or diagram</div>
+          <h3>IR Sensor Automatic Tap</h3>
+          <p><strong>Problem:</strong> Touch-free water dispensing for hygiene and water saving.</p>
+          <p><strong>Approach:</strong> IR sensor detecting hands and triggering the water supply through a switching and actuator stage.</p>
+          <p><strong>Result:</strong> Practical grasp of sensor-to-actuator integration.</p>
+          <div class="tags"><span>IR sensor</span><span>Automation</span><span>Actuators</span></div>
+          <a href="#" class="link">View details &rarr;</a>
+        </article>
+
+        <article class="card reveal" data-cat="power">
+          <div class="card-img">Add calculation sheet</div>
+          <h3>Power Systems and Protection Studies</h3>
+          <p><strong>Problem:</strong> Understand how power is transmitted, distributed and protected.</p>
+          <p><strong>Approach:</strong> Study of MCBs, MCCBs, ACBs, relays, UPS, AVRs, transmission-line sag, voltage regulation and losses.</p>
+          <p><strong>Result:</strong> Solid foundation in distribution and protection design.</p>
+          <div class="tags"><span>Protection</span><span>Distribution</span><span>Transmission</span></div>
+          <a href="#" class="link">View notes &rarr;</a>
+        </article>
+
+        <article class="card reveal" data-cat="power">
+          <div class="card-img">Add transformer diagram</div>
+          <h3>Transformer Theory and Design Calculations</h3>
+          <p><strong>Problem:</strong> Size and analyse transformers for power and measurement.</p>
+          <p><strong>Approach:</strong> Conventional, auto, current and potential transformers; losses, eddy currents and design calculations.</p>
+          <p><strong>Result:</strong> Ability to carry out transformer calculations and explain applications.</p>
+          <div class="tags"><span>Transformers</span><span>Calculations</span></div>
+          <a href="#" class="link">View report &rarr;</a>
+        </article>
+
+        <article class="card reveal" data-cat="power">
+          <div class="card-img">Add circuit simulation</div>
+          <h3>Amplifier and Op-Amp Circuit Analysis</h3>
+          <p><strong>Problem:</strong> Analyse gain and frequency behaviour of amplifier stages.</p>
+          <p><strong>Approach:</strong> RC-coupled, direct-coupled and operational amplifier circuits, gain and frequency response.</p>
+          <p><strong>Result:</strong> Confident circuit analysis for analog electronics.</p>
+          <div class="tags"><span>Op-amps</span><span>Analog electronics</span></div>
+          <a href="#" class="link">View analysis &rarr;</a>
+        </article>
+
+        <article class="card reveal" data-cat="software automation">
+          <div class="card-img">Concept diagram</div>
+          <h3>AI-Based Motor Fault Detection (Concept)</h3>
+          <p><strong>Problem:</strong> Motor breakdowns cause costly downtime.</p>
+          <p><strong>Approach:</strong> Exploring PLC data and algorithms to spot abnormal motor behaviour early.</p>
+          <p><strong>Status:</strong> Ongoing exploration and my main research interest.</p>
+          <div class="tags"><span>PLC</span><span>AI</span><span>Predictive maintenance</span></div>
+          <a href="#" class="link">Read concept &rarr;</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <h2 class="reveal">Skills and Tools</h2>
+      <div class="skill-grid">
+        <div class="skill-box reveal">
+          <h3>Electrical</h3>
+          <ul><li>Circuit analysis</li><li>Power systems</li><li>Electrical machines</li><li>Transformers</li><li>Protection</li><li>Power distribution</li></ul>
+        </div>
+        <div class="skill-box reveal">
+          <h3>Electronics</h3>
+          <ul><li>Analog electronics</li><li>Amplifiers</li><li>Operational amplifiers</li><li>Signal concepts</li></ul>
+        </div>
+        <div class="skill-box reveal">
+          <h3>Automation</h3>
+          <ul><li>PLC fundamentals</li><li>Sensors and actuators</li><li>Relays and contactors</li><li>Motor control</li></ul>
+        </div>
+        <div class="skill-box reveal">
+          <h3>Embedded and IoT</h3>
+          <ul><li>Arduino</li><li>ESP8266</li><li>Sensor integration</li><li>Serial communication</li><li>ThingSpeak</li></ul>
+        </div>
+        <div class="skill-box reveal">
+          <h3>Programming</h3>
+          <ul><li>Python (NumPy, SciPy, Matplotlib)</li><li>Arduino / C++</li><li>MATLAB</li><li>HTML and CSS</li></ul>
+        </div>
+        <div class="skill-box reveal">
+          <h3>Software and Design</h3>
+          <ul><li>PyCharm</li><li>VS Code</li><li>Arduino IDE</li><li>AutoCAD Electrical (concepts)</li><li>LaTeX and Word</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRY -->
+    <section id="industry" class="section">
+      <h2 class="reveal">Industrial Exposure and Career Vision</h2>
+      <p class="reveal">I am pursuing industrial training to see how electrical engineering works outside the classroom, with a focus on electrical maintenance, automation, control systems, power distribution and instrumentation. Organisations I am targeting include:</p>
+      <div class="chips reveal">
+        <span>Coca-Cola Beverages Uganda</span>
+        <span>Roofings Rolling Mills</span>
+        <span>Steel and Tube Industries</span>
+        <span>UEDCL</span>
+        <span>Uganda Industrial Research Institute</span>
+      </div>
+      <p class="reveal">My vision is to work where electrical engineering, automation, software and AI meet, building industrial systems that monitor themselves, detect faults early, and cut energy use and downtime, especially solutions relevant to Uganda and Africa.</p>
+    </section>
+
+    <!-- CONTACT -->
+   <form id="contactForm" action="https://formspree.io/f/xnpjdrvv" method="POST" novalidate>
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" autocomplete="name" required>
+
+  <label for="email">Your email</label>
+  <input id="email" name="email" type="email" autocomplete="email" required>
+
+  <label for="subject">Subject</label>
+  <select id="subject" name="subject">
+    <option>Internship / industrial training</option>
+    <option>Collaboration</option>
+    <option>Project question</option>
+    <option>Other</option>
+  </select>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <!-- Spam trap: real visitors never see this -->
+  <input type="text" name="_gotcha" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+  <p class="form-msg" id="formMsg" role="alert"></p>
+  <button class="btn" type="submit" id="submitBtn">Send Message</button>
+</form>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Franklin Mubiru Luutu. Kyambogo University, Uganda.</p>
+    <a href="#top">Back to top &uarr;</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
